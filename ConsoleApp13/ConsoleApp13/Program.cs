@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите число");
+            Console.WriteLine("Введите число:");
             double x;
             double y;
             double z;

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Максим\\source\\repos\\ConsoleApp13\\ConsoleApp13\\ConsoleApp13.csproj",
+      "projectUniqueName": "C:\\Users\\Максим\\source\\maksim\\ConsoleApp13\\ConsoleApp13\\ConsoleApp13.csproj",
       "projectName": "ConsoleApp13",
-      "projectPath": "C:\\Users\\Максим\\source\\repos\\ConsoleApp13\\ConsoleApp13\\ConsoleApp13.csproj",
+      "projectPath": "C:\\Users\\Максим\\source\\maksim\\ConsoleApp13\\ConsoleApp13\\ConsoleApp13.csproj",
       "packagesPath": "C:\\Users\\Максим\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Максим\\source\\repos\\ConsoleApp13\\ConsoleApp13\\obj\\",
+      "outputPath": "C:\\Users\\Максим\\source\\maksim\\ConsoleApp13\\ConsoleApp13\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
