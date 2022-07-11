@@ -7,7 +7,7 @@
             // задание 1
 
 
-            Console.WriteLine("Ведите квардрат корень");
+            Console.WriteLine("Введите квардрат корень числа");
             double i;
             string a;
             a = Console.ReadLine();
