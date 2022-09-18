@@ -1,36 +1,37 @@
 ﻿namespace ConsoleApp11
 {
-    internal class Program
+    internal class Program1
     {
         static void Main(string[] args)
         {
-            // задание 1
 
+            Console.WriteLine("Введите число для вычисления корня:");
 
-            Console.WriteLine("Введите квардрат корень числа");
-            double i;
-            string a;
-            a = Console.ReadLine();
-            if (int.TryParse(a, out int number))
-            { i = Convert.ToInt32(a);
+            string input = Console.ReadLine();
 
-
-                if (i > 0)
+            if (double.TryParse(input, out double number))
+            {
                 {
-                    double s = Math.Sqrt(i);
-                    Console.WriteLine(s);
+
+
+                }
+                if (number >=0 )
+                {
+                    double result = Math.Sqrt(number);
+                    Console.WriteLine($"Квадратный корень числа {number} равен {result}");
+
                 }
                 else
+
                 {
-                    Console.WriteLine("Ошибка невозможно вычислить корень");
+                    Console.WriteLine("Ошибка: корень отрицательного числа вычислить невозможно");
+
                 }
-
             }
-            else 
-            { Console.WriteLine("Ошибка введено не число"); }
-
-           
-           
+            else
+            {
+                Console.WriteLine($"Ошибка: {input} не является числом");
+            }
         }
     }
 }

@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="C:\Users\Максим\source\maksim\ConsoleApp11\Program.cs" Link="Program.cs" />
+    <Compile Include="C:\Users\Максим\source\maksim\Program.cs" Link="Program.cs" />
+    <Compile Include="C:\Users\Максим\source\maksim\Первое задание\Program.cs" Link="Program.cs" />
   </ItemGroup>
 
 </Project>

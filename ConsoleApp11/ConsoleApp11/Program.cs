@@ -1,36 +1,41 @@
-﻿namespace ConsoleApp11
+﻿namespace ConsoleApp111
 {
-    internal class Program
+    internal class Program1
     {
-        static void Main(string[] args)
-        {
-            // задание 1
+       
+        
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Введите число для вычисления корня:"); // тут будет понятно что нужно ввести и для чего
+                string input = Console.ReadLine(); // объявление и присваивание делаем в одной строке, так короче и проще
 
-
-            Console.WriteLine("Ведите квардрат корень");
-            double i;
-            string a;
-            a = Console.ReadLine();
-            if (int.TryParse(a, out int number))
-            { i = Convert.ToInt32(a);
-
-
-                if (i > 0)
+                if (double.TryParse(input, out double number)) // number используется дальше, как результат парсинга string -> double (не нужно еще раз делать парсинг Convert.ToInt32(a) и создавать ещё одну переменную)
                 {
-                    double s = Math.Sqrt(i);
-                    Console.WriteLine(s);
+                    if (number >=- 0) // тут исправил на >=, т.к. корень 0 вычислить можно
+                    {
+                        double result = Math.Sqrt(number);
+                        Console.WriteLine($"Квадратный корень числа {number} равен {result}"); // развёрнутый ответ 
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ошибка: корень отрицательного числа вычислить невозможно"); // так пользователю будет понятнее что не так
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Ошибка невозможно вычислить корень");
+                    Console.WriteLine($"Ошибка: {input} не является числом");
                 }
-
             }
-            else 
-            { Console.WriteLine("Ошибка введено не число"); }
 
-           
-           
+
+
+
+
         }
-    }
-}
+        }
+    
+
+    
+
+    
+
