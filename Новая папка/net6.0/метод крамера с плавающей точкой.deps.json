@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "метод крамера с плавающей точкой/1.0.0": {
+        "runtime": {
+          "метод крамера с плавающей точкой.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "метод крамера с плавающей точкой/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
