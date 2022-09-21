@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Обратной матрицы 4 на 4/1.0.0": {
+        "runtime": {
+          "Обратной матрицы 4 на 4.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Обратной матрицы 4 на 4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
