@@ -1,71 +1,26 @@
-﻿namespace Камень_ножницы_бумага_игра
+﻿namespace Камень_ножницы_бумага4._1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
-            int CheckUserWin = random.Next(3);
-            int computerChoice = CheckUserWin;
-            Console.WriteLine(computerChoice);
-            Console.WriteLine("1.Камень");
-            Console.WriteLine("2.Ножницы");
-            Console.WriteLine("3.Бумага");
-            Console.Write("Ваш выбор? — ");
-            string Using = Console.ReadLine();
+            var player = new Class1();
+            char responsee;
+            Console.WriteLine("Would uou to play game of rock,scisorse (y or n)?");
+            responsee = Convert.ToChar(Console.ReadLine());  
 
-            if (int.TryParse(Using, out int Player))
-
-
-                Console.WriteLine($"Прошло проверку на число {Using} !");
-
-            else
-
-                Console.WriteLine($"Ошибка {Using} не является числом !");
-            
-            
-            Console.WriteLine($" Компьютер:{computerChoice}");
-            Console.Write($"Игрок:{Player}");
-            Console.WriteLine();
-           
-            switch (Player)
-            {
-                case 1:
-                    Console.WriteLine($"Камень против ", computerChoice);
-
-                    if (Player == Player && computerChoice == computerChoice)
-                        Console.WriteLine("Ты победил");
-                    else if (Player == Player && computerChoice == computerChoice)
-                    Console.WriteLine("Ты проиграл");
-                    else
-                        Console.WriteLine("Ничья");
-               
-                    break;
-                case 2:
-                    Console.WriteLine($"Ножницы против ", computerChoice);
-
-                    if (Player != Player && computerChoice == computerChoice)
-                        Console.WriteLine("Ты победил");
-                    else if (Player != Player && computerChoice == computerChoice)
-                        Console.WriteLine("Ты проиграл");
-                    else
-                        Console.WriteLine("Ничья");
+            while(player.validateSelection(responsee)== false)
+                    {
+                Console.WriteLine("Invalid Input . Please re-enter your selection ");
+                responsee=Convert.ToChar(Console.ReadLine());
+                if (responsee == 'Y' ||| responsee == 'y')
+                {
+                    Console.Clear();
                  
-
-                    break;
-                case 3:
-                    Console.WriteLine($" Бумага против", computerChoice);
-
-                    if (Player != Player && computerChoice == computerChoice)
-                        Console.WriteLine("Ты победил");
-                    else if (Player != Player && computerChoice == computerChoice)
-                        Console.WriteLine("Ты проиграл");
-                    else
-                        Console.WriteLine("Ничья");
-                     
-
-                    break;
+                    Console.WriteLine("God bay");
+                    Console.ReadLine();
+                }
             }
+        }
     }
 }
-    }
